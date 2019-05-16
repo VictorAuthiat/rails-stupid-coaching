@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
-    if @question == "I am going to work" || "I'm going to work"
+    if @question == "I am going to work" || @question == "I'm going to work"
       @answer = "Great!"
     elsif @question.include?("?")
       @answer = "silly question"
