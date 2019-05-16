@@ -4,7 +4,6 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    # on recupere la key ask
     @question = params[:question]
     if @question == "I am going to work" || "I'm going to work"
       @answer = "Great!"
